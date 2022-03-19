@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+html {
+  height: 100%;
+  background-color: black;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 2s;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Card {
+  width: 50rem;
+  height: 25rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  animation: opacity 2s;
+}
+
+.Text {
+  width: 70%;
+  font-size: 1.3rem;
+}
+
+.Author {
+  margin-right: 5rem;
+  align-self: flex-end;
+}
+.Author p {
+  font-size: 1.2rem;
+}
+
+.Buttons {
+  margin-top: 2rem;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(5, 7rem);
+}
+.Buttons .NewQuote {
+  justify-self: center;
+  grid-column-start: 5;
+  height: 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: transform 300ms;
+}
+.Buttons .NewQuote:hover {
+  cursor: pointer;
+  filter: brightness(130%);
+  transform: scale(1.05);
+}
+.Buttons .TweetQuote {
+  justify-self: center;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  transition: transform 300ms;
+}
+.Buttons .TweetQuote:hover {
+  cursor: pointer;
+  filter: brightness(130%);
+  transform: scale(1.05);
+}
+
+.Animated {
+  animation: opacity 1s;
+}
+
+.LoadPageAnimation {
+  animation: loadPageAnimation 1.5s;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=App.module.css.map */
